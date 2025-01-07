@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student-grade</title> 
+    <style>
+        div{
+            text-align:center;
+            color: rgb(1, 10, 18);
+            border: hidden;
+            border-radius: 20px;
+            width:1300px;
+            height:450px;
+            background-image: url(s-g1.png);
+            margin:auto;
+            margin-top: 15px;
+            background-repeat: no-repeat;
+            background-size: cover;  
+            padding-top: 150px;
+           
+             
+        }
+        body{
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1><u>Student Grade & Percentage</u> </h1>
+ <h3>  <script>
+        var num1=parseInt(prompt("Enter Tamil Mark"));
+        var num2=parseInt(prompt("Enter English Mark"));
+        var num3=parseInt(prompt("Enter Science Mark"));
+        var num4=parseInt(prompt("Enter Social Mark"));
+        var num5=parseInt(prompt("Enter Maths Mark"));
+        var studentnameis="R.tendulkar"
+        var id=19237450
+        var total=num1+num2+num3+num4+num5;
+        var percentage=(total*100)/500;
+        document.write("Name="+studentnameis+"<br>"+"<br>")
+        document.write("Id Number="+id+"<br>"+"<br>")
+        document.write("Total Mark="+total+"<br>"+"<br>")
+        document.write("Total Percentage="+percentage+"<br>"+"<br>")
+        if ( percentage > 90 ) {
+            document.write("Grade:A");
+        }
+        else if (percentage > 80 && percentage <=90){
+            document.write("Grade:B");
+        }
+        else if (percentage > 70 && percentage <=80){
+            document.write("Grade:C");
+        }
+        else if (percentage > 60 && percentage <=70){
+            document.write("Grade:D");
+        }
+        else if (percentage > 50 && percentage <=60){
+            document.write("Grade:E");
+        }
+        else{
+            document.write("pass");
+        }
+
+    </script></h3> 
+     </div>
+</body>
+</html>
